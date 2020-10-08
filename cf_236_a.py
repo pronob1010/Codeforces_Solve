@@ -1,11 +1,13 @@
 s = input()
-f = 0
-for i in range(len(s)):
-    if s[i]=='a' and s[i]=='e' and s[i]=='i' and s[i]=='o' and s[i]=='u':
-        f = 1
-        break
 
-if f == 0:
+seq = {}
+for i in s:
+    if i in seq:
+        seq[i] += 1
+    else:
+        seq[i] = 1
+
+if len(seq)%2 == 1:
     print("IGNORE HIM!")
 else:
     print("CHAT WITH HER!")
