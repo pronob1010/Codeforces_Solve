@@ -1,10 +1,17 @@
-L = [0, 0, 0]
+n=int(input())
+a=list(map(int,input().split()))
 
-L1 = ["chest", "biceps", "back"]
+b=[0]*3
+# print(b)
 
-input()
+for i in range(n):
+	b[i%3]+=a[i]
 
-for k, j in enumerate(map(int, input().split(" "))):
-    L[k % 3] += j
 
-print(L1[L.index(max(L))])
+m=max(b)
+if b[0]==m:
+	print("chest")
+elif b[1]==m:
+	print("biceps")
+else:
+	print("back")

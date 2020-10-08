@@ -7,5 +7,4 @@ for i in range(b):
         a //= 10
     else:
         a = a - 1
-
 print(a)
