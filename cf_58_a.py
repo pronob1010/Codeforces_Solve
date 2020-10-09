@@ -12,7 +12,6 @@ for i in range(len(s)):
     else:
         break
 
-
 if j-1 == ls2:
     print("YES")
 else:
