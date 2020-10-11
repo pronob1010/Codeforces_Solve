@@ -1,6 +1,9 @@
 a,b = list(map(int, input().split()))
 s = list(map(int, input().split()))[:b]
-r = s[0]
+if s[0]!= 1:
+    r = s[0]
+else:
+    r = 0
 for i in range(2, len(s)):
     if s[i-1]==s[i]:
         r+=0
