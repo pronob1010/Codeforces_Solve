@@ -1,14 +1,23 @@
 a,b = list(map(int, input().split()))
 s = list(map(int, input().split()))[:b]
 
-r = s[0]-1
-for i in range(1,len(s)):
-    if s[i-1]>s[i]:
-        r += (4-s[i-1])+s[i]
-    elif s[i-1]<s[i]:
-        r += s[i]-s[i-1]
+ini = 1
+ans = 0
+for i in range(b):
+    ans += (s[i] - ini + a)%a
+    ini = s[i]
 
-print(r)
+print(ans)
+
+
+# r = s[0]-1
+# for i in range(1,len(s)):
+#     if s[i-1]>s[i]:
+#         r += (4-s[i-1])+s[i]
+#     elif s[i-1]<s[i]:
+#         r += s[i]-s[i-1]
+#
+# print(r)
 
 # if s[0]!= 1:
 #     r = s[0]
