@@ -11,9 +11,11 @@ for i in range(int(input())):
                 # digit.append(t%10)
                 if m<t%10:
                     m = t%10
-                elif min>t%10:
+                elif min>t%10 and m>0:
                     min = t % 10
                 t=t//10
+            if min == 0:
+                break
 
             a += (m*min)
 
