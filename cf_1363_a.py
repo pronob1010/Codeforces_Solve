@@ -15,7 +15,7 @@ for i in range(int(input())):
     else:
         k-=1
         odd -=1
-        while k!= 0:
+        while k>0:
             if odd>= 2 and k>=2:
                 odd-=2
                 k -=2
@@ -25,10 +25,10 @@ for i in range(int(input())):
             else:
                 break
 
-    if k!=0:
-        print("No")
-    else:
-        print("Yes")
+        if k!=0:
+            print("No")
+        else:
+            print("Yes")
 
 
 
