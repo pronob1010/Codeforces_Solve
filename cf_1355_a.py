@@ -4,15 +4,37 @@ for i in range(int(input())):
         for j in range(0,k-1):
             digit = []
             t = a
+            m = t % 10
+            min = t%10
+
             while(t!=0):
-                digit.append(t%10)
+                # digit.append(t%10)
+                if m<t%10:
+                    m = t%10
+                elif min>t%10:
+                    min = t % 10
                 t=t//10
-            m = max(digit)
-            mi = min(digit)
-            a += (m*mi)
+
+            a += (m*min)
+
     print(a)
 
 
+
+    #
+    # for i in range(int(input())):
+    #     a, k = list(map(int, input().split()))
+    #     if k > 1:
+    #         for j in range(0, k - 1):
+    #             digit = []
+    #             t = a
+    #             while (t != 0):
+    #                 digit.append(t % 10)
+    #                 t = t // 10
+    #             m = max(digit)
+    #             mi = min(digit)
+    #             a += (m * mi)
+    #     print(a)
 
     # for t in range(k):
     #     alen = len(str(a))
