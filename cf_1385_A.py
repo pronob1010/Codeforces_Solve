@@ -9,5 +9,3 @@ for _ in range(int(input())):
         print(s[2],s[0],s[0])
     else:
         print("NO")
-
- 
