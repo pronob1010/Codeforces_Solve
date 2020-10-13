@@ -9,11 +9,13 @@ for _ in range(int(input())):
             else:
                 c = 0
                 break
-    else:
-        print("YES")
-        break
 
-    if c == 1:
-        print("YES")
+        if c == 1:
+            print("YES")
+        else:
+            print("NO")
+
     else:
-        print("NO")
+        print("YES")
+
+
