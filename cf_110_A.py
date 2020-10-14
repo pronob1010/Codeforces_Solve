@@ -6,6 +6,7 @@ while(t!=0):
         f =1
     else:
         f =0
+        break
     t//=10
 
 if f ==1:
