@@ -17,5 +17,7 @@ elif l==(x):
     print(st.lower())
 elif u == l:
     print(st.lower())
-else:
+elif l>u:
     print(st.lower())
+elif u>l:
+    print(st.upper())
