@@ -9,6 +9,7 @@ for i in range(1,x):
     else:
         l+=1
 
+
 if u==l:
     print(st.upper())
 else:
