@@ -4,17 +4,18 @@ for j in range(t):
     nlist = list(map(int, input().split()))[:n]
     d = {}
     for i in range(n):
-        # print(bin(nlist[i]))
+        print(bin(nlist[i]))
         k = len(bin(nlist[i]))
+
         if k in d:
             d[k]+=1
         else:
             d[k]=1
 
     ans = 0
-    # print(d)
+    print(d)
     for i in d:
-        # print(d[i],d[i]-1)
+        print(d[i],d[i]-1)
         ans += (d[i]*(d[i]-1))//2
     print(ans)
 
