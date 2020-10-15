@@ -17,7 +17,5 @@ for i in range(n):
     l += a[i]
     if l>t:
         l-=a[c]
-
         c += 1
 print(n-c)
-
