@@ -9,4 +9,5 @@ for i in range(1,n):
     if (min(l)== s[i] or max(l)==s[i]) and s[i] not in m:
         c+=1
         m.append(s[i])
-print(c)
+print(m)
+print(len(m))
