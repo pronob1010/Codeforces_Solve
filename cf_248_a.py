@@ -12,5 +12,4 @@ for i in range(int(input())):
         rz += 1
     else:
         ro += 1
-
 print(min(lz,lo)+min(ro,rz))
