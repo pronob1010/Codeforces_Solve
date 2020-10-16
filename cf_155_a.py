@@ -1,13 +1,19 @@
 n = int(input())
 s = list(map(int,input().split()))[:n]
-l=[]
-m = []
+
 c = 0
-l.append(s[0])
-for i in range(1,n):
-    l.append(s[i])
-    if (min(l)== s[i] or max(l)==s[i]) and s[i] not in m:
+
+x = s[0]
+x2 = s[0]
+
+for i in range(1,n+1):
+    if (s[i-1]>x):
         c+=1
-        m.append(s[i])
-print(m)
-print(len(m))
+        x = s[i-1]
+
+    if (s[i - 1] < x2):
+        c += 1
+        x2 = s[i - 1]
+
+print(c)
+
