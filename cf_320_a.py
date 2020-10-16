@@ -1,6 +1,5 @@
 n = input()
 i = len(n)-1
-
 if n[0]=='1':
     # print(i)
     while i>=0:
