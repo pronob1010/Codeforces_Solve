@@ -2,26 +2,28 @@ n = input()
 i = len(n)-1
 
 if n[0]=='1':
+    # print(i)
     while i>=0:
-        if n[i]=='4' and n[i-1]=='4' and n[i-1]=='1':
+        # print(n[i])
+        if n[i]=='4' and n[i-1]=='4' and n[i-2]=='1':
             i-=3
-
+            # print("fdfd")
         elif n[i]=='4' and n[i-1]=='1':
             i-=2
-
+            # print("fd")
         elif n[i]=='1':
-
+            # print("fdd")
             i-=1
         else:
-
+            # print("ffd")
             break
-    print(i)
-if i>0:
-
-    print("NO")
-else:
-
+    # print(i)
+if i<0:
     print("YES")
+else:
+    print("NO")
+
+
 
 
 
