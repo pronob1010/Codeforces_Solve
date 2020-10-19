@@ -1,6 +1,5 @@
 for i in range(int(input())):
     a,b = list(map(int,input().split()))
-
     r = b-a
     print(r%b)
 
