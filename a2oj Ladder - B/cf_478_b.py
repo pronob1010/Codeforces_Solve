@@ -1,16 +1,29 @@
 n, m = list(map(int, input().split()))
-
 t = n-(m-1)
 max = (t*(t-1))//2
 
-t = n//m
-r1 = (t*(t-1))//2
-min=r1*m
 
-if n%m==0:
-    min = min
-else:
-    min +=n%m
+min = 0
+t = n//m
+# print(t)
+pendding = n%m
+
+t1=((int(t) + 1)*((int(t) + 1)-1))//2*pendding
+t2=((t*(t-1))//2)*(m-pendding)
+
+min= t1+t2
+
+
+
+# for t in t1:
+#     min+=(t*(t-1))//2
+#
+
+# print(min)
+# if n%m==0:
+#     min = min
+# else:
+#     min +=
 print(min,max)
 
 
