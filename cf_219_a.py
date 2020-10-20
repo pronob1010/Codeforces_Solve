@@ -10,6 +10,30 @@ else:
 
 
 
+#
+# n= int(input())
+# t =sorted(input())
+# nl = set(t)
+# if len(nl)>1:
+#     f = {}
+#     for i in range(1,len(t)):
+#         if t[i-1] in f:
+#             f[t[i-1]]+=1
+#         else:
+#             f[t[i-1]]=1
+#
+#     # print(f)
+#     m = max(f.values())
+#     # print(m)
+#     if m!=len(nl):
+#         print("-1")
+#     else:
+#         kl = [str(i) for i in f.keys()]
+#         for i in range(m):
+#             print(*kl,sep="",end="")
+# else:
+#     print(*t,sep="")
+#
 
 
 # n = int(input())

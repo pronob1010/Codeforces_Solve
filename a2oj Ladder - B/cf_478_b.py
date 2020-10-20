@@ -1,9 +1,27 @@
 n, m = list(map(int, input().split()))
 
-r = n//m
-c = 0
-for i in range(0,r+1):
+t = n-(m-1)
+max = (t*(t-1))//2
 
-    for j in range(0,i):
-        c += 1
-print(c)
+t = n//m
+r1 = (t*(t-1))//2
+min=r1*m
+
+if n%m==0:
+    min = min
+else:
+    min +=n%m
+print(min,max)
+
+
+# n, m = list(map(int, input().split()))
+# t = n//m
+#
+# r = (t*(t-1))//2
+# print(r,r)
+
+# if m==1:
+#     t = n
+#     r = (t*(t-1))//2
+#     print(r,r)
+# else:
