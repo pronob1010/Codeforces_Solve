@@ -10,7 +10,8 @@ sum=0
 # print(max1)
 l=1
 for i in s:
-    sum=sum+l*int(k[ord(i)-97])
+    # print(int(k[ord(i)-97]))
+    sum = sum+l*int(k[ord(i)-97])
     l+=1
 
 # print(sum,l)
