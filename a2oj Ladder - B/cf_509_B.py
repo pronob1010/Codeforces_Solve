@@ -18,14 +18,17 @@ for i in range(int(input())):
     r =0
     # print(c1)
     # print(c2)
+    li=[]
+    o11=0
+    o20=0
+    for k in range(l):
+        if n[k]=='1':
+            o11+=1
+        else:
+            o20+=1
 
-    for k in range(1,l+1):
-        print(r)
-        r = min(r,k+1-c1[k-1]+c2[k-1+1])
-        r = min(r, c1[k-1] +(l-k-1-1)-c2[k-1 + 1])
-
-
-    print(r)
+        li.append(min(o20+o1-o11, o11+o2-o20))
+    print(min(li))
 
 
 
