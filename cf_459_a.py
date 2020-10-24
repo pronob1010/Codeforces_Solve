@@ -6,16 +6,19 @@ if x1==x2:
     y3 = y1
     x4 = x2 + l2
     y4 = y2
+    print(x3, y3, x4, y4)
 elif y1==y2:
     x3 = x1
     y3 = y1 + l1
     x4 = x2
     y4 = y2 + l1
-elif l1!=l2:
+    print(x3, y3, x4, y4)
+
+elif l1 != l2:
     print(-1)
 else:
     x3 = x1
-    y3 = y1
+    y3 = y2
     x4 = x2
-    y4 = y2
-print(x3,y3,x4,y4)
+    y4 = y1
+    print(x3, y3, x4, y4)
