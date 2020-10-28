@@ -1,31 +1,30 @@
-def SieveOfEratosthenes(n):
-   prime = [True for i in range(n + 1)]
-   p = 2
-   while (p * p <= n):
-      if (prime[p] == True):
-         for i in range(p * 2, n + 1, p):
-            prime[i] = False
-      p += 1
-
-   prime[0]= False
-   prime[1]= False
-
-   pl = []
-   for p in range(n + 1):
-      if prime[p]:
-         pl.append(p)
-   return pl
-
-n = 100
-p = []
-p= SieveOfEratosthenes(n)
-
-from itertools import permutations
 for i in range(int(input())):
     n = int(input())
-    comb = permutations(range(1,n+1), n)
 
-    for i in list(comb):
-        print(sum(i))
-        # if sum(i) in p:
-        #     print(i)
+    p= []
+    t = n-1
+    for j in range(n):
+        m = [0 for i in range(n)]
+
+        for k in range(n):
+            if t==k or k==t-1:
+                m[t]=1
+                m[t-1]=1
+        t -= 1
+        p.append(m)
+
+    # p = []
+    # t = n - 1
+
+    # for j in range(n):
+    #     m = []
+    #     for k in range(n):
+    #         if j==k or k==t:
+    #             m.append(1)
+    #         else:
+    #             m.append(0)
+    #     t -= 1
+    #     p.append(m)
+
+    for l in p:
+        print(*l, sep=" ")
