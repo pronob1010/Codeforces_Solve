@@ -10,6 +10,7 @@ for i in range(n):
 
 # print(c)
 
+
 if t==s0:
     print(0)
 
