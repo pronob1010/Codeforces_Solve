@@ -19,3 +19,4 @@ for i in a:
     if i*m in b:
         c+=1
 print(c)
+
