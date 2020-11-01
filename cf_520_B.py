@@ -2,11 +2,21 @@ a,b = list(map(int, input().split()))
 if a>b:
     print(a-b)
 else:
-    r = b%a
-    if r==0:
-        print(b//a)
-    else:
-        print(r)
+
+    c = 0
+    while(a<b):
+
+        if a!=b and b%2==0:
+            b = b//2
+            c+=1
+        else:
+            b+=1
+            c+=1
+
+    c = a-b+c
+
+    print(c)
+
 
 
 # def solve(a, b, t):
