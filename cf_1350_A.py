@@ -7,7 +7,11 @@ for i in range(n):
     if r%2==0:
         r+=2*(b)
     else:
-        r+=r
+        for k in range(2, n+1):
+            if r%k==0:
+                r+=i
+                break
+
         r += 2*(b-1)
 
     print(r)
