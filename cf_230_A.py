@@ -8,7 +8,7 @@ for i in range(n):
     match.append([x,y])
 
 match.sort()
-# print(match)
+print(match)
 for i in match:
     if i[0]>= p:
         print("NO")
