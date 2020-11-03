@@ -1,4 +1,5 @@
-for i in range(int(input())):
+p = int(input())
+for i in range(p):
     n = int(input())
     r = 0
     j = 1
