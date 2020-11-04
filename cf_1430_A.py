@@ -13,7 +13,7 @@ for i in range(int(input())):
 
         elif (n-5)%3==0:
             r5 = 1
-            r3+=(n-3)//3
+            r3+=(n-5)//3
 
         else:
             r3+=(n-7)//3
