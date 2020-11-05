@@ -8,8 +8,16 @@ for i in range(int(input())):
                 f[s[i]]+=1
             else:
                 f[s[i]]=1
+    fl = 0
+    # print(f)
+    for k in f.values():
+        if k>=n and k%n==0:
+            fl=1
+        else:
+            fl=0
+            break
 
-    if (min(f.values())>=n):
+    if (fl == 1):
         print("YES")
     else:
         print("NO")
