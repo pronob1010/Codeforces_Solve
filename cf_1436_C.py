@@ -21,7 +21,7 @@ while left < right:
 
 	else:
 		left = mid + 1
-print(more, right)
+print(more, less)
 ans *= math.factorial(more + less)
 print(ans % 1000000007)
 
