@@ -6,6 +6,7 @@ right = n
 more = n - x
 less = n - more - 1
 ans = 1
+
 while left < right:
 	mid = (left + right) // 2
 	if mid < pos:
@@ -20,6 +21,7 @@ while left < right:
 
 	else:
 		left = mid + 1
-
+print(more, right)
 ans *= math.factorial(more + less)
 print(ans % 1000000007)
+
