@@ -3,13 +3,13 @@ def twoPoint(g,i,x,c,used):
     end = len(g)-1
     while(start<=end):
         # print(x)
-        if abs(g[start]-x)==1 and g[start] not in used:
+        if abs(g[start]-x)<=1:
             c+=1
-            used.append(g[start])
-        else:
-            start += 1
-    else:
-        return c
+            g[start]=-100
+            break
+        start += 1
+
+    return c
 
 
 
@@ -20,11 +20,12 @@ g = list(map(int, input().split()))
 
 b.sort()
 g.sort()
-print(b)
-print(g)
+
 used = []
 c = 0
+r = 0
 for i in range(len(b)):
-    twoPoint(g,0,b[i],c,used)
+    r += twoPoint(g,0,b[i],c,used)
 
-print(len(used))
+print(r)
+# print(g)
