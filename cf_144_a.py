@@ -1,35 +1,42 @@
 n = int(input())
 s = list(map(int, input().split()))[:n]
-m = max(s)
-mp = 0
-min = min(s)
-minp =0
-# print(m,min)
-if n == 2 or (s[0]==m and s[len(s)-1]==min):
-    if s[0]>s[len(s)-1]:
-        print('0')
-    else:
-        print('1')
-else:
-    for i in range(len(s)):
-        if s[i]>=m:
-            m = s[i]
-            mp = i
 
-    for i in range(len(s)):
-        if s[i]<=min:
-            min = s[i]
-            minp = i
+x = s.index(max(s))
+s.remove(s[x])
+s.reverse()
+y = s.index(min(s))
+print(x+y)
 
-    # print(m, mp)
-    # print(min, minp)
-
-    if mp>minp:
-        minp+=1
-    # print(minp)
-    t = (mp+(len(s)-1)-minp)
-    print(t)
-
+# m = max(s)
+# mp = 0
+# min = min(s)
+# minp =0
+# # print(m,min)
+# if n == 2 or (s[0]==m and s[len(s)-1]==min):
+#     if s[0]>s[len(s)-1]:
+#         print('0')
+#     else:
+#         print('1')
+# else:
+#     for i in range(len(s)):
+#         if s[i]>=m:
+#             m = s[i]
+#             mp = i
+#
+#     for i in range(len(s)):
+#         if s[i]<=min:
+#             min = s[i]
+#             minp = i
+#
+#     # print(m, mp)
+#     # print(min, minp)
+#
+#     if mp>minp:
+#         minp+=1
+#     # print(minp)
+#     t = (mp+(len(s)-1)-minp)
+#     print(t)
+#
 
 # n = int(input())
 # s = list(map(int, input().split()))[:n]
