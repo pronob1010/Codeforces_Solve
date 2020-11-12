@@ -1,9 +1,10 @@
 n = int(input())
 s = list(map(int, input().split()))[:n]
-
+# print(s)
 x = s.index(max(s))
 s.remove(s[x])
 s.reverse()
+# print(s)
 y = s.index(min(s))
 print(x+y)
 
