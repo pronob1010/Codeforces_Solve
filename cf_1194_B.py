@@ -14,13 +14,15 @@ for l in range(t):
                 c+=1
         mm.append(c)
     r = 0
-    mm.sort()
+
     # print(mm)
+    o = 0
     for i in range(len(mm)-1):
         if mm[i]==0:
             r+=1
         elif mm[i]>1 and mm[i]<y:
             r+=0
+        # print(r)
 
     r+=(y-mm[len(mm)-1])
     print(r)
