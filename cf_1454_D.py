@@ -24,6 +24,7 @@ def primeFactors(n):
     if n > 2:
         pp.append(n)
     return pp
+
 t = int(input())
 for i in range(t):
     n = int(input())
@@ -39,32 +40,52 @@ for i in range(t):
         print(n)
     else:
         x = primeFactors(n)
-        x.sort(reverse=True)
         f = 0
         tt = 1
         print(x)
-        for p in range(len(x)):
-            tt *=  x[p]
-            for i in range(len(x)):
-                if tt%x[i]==0:
-                    f2 = 1
-                else:
-                    f2 = 0
-            if f2 == 1:
-                w = p
-                print(len(x[w+1:len(x)])+1)
 
-                rr = []
-                for k in x[w+1:]:
-                    rr.append(k)
+        fre = {}
+        for i in range(len(x)):
+            if x[i] in fre:
+                fre[x[i]]+=1
+            else:
+                fre[x[i]] = 1
 
-                r1 = rr
-                if (len(r1))>0:
-                    print(*r1,end=" ")
-                print(int(tt))
-                break
-        else:
-            print(len(x))
-            for i in x:
-                print(int(i), end=" ")
-            print()
+        m = max(fre, key=fre.get)
+        mt= m
+        times = fre.get(m)
+        for i in range(len(x)):
+            if x[i] != mt:
+                mt*=x[i]
+        print(times)
+        for i in range(times-1):
+            print(int(m), end=" ")
+        print(int(mt))
+
+
+
+        # for p in range(len(x)):
+        #     tt *=  x[p]
+        #     for i in range(len(x)):
+        #         if tt%x[i]==0:
+        #             f2 = 1
+        #         else:
+        #             f2 = 0
+        #     if f2 == 1:
+        #         w = p
+        #         print(len(x[w+1:len(x)])+1)
+        #
+        #         rr = []
+        #         for k in x[w+1:]:
+        #             rr.append(k)
+        #
+        #         r1 = rr
+        #         if (len(r1))>0:
+        #             print(*r1,end=" ")
+        #         print(int(tt))
+        #         break
+        # else:
+        #     print(len(x))
+        #     for i in x:
+        #         print(int(i), end=" ")
+        #     print()
