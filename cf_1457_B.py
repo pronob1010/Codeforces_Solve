@@ -28,9 +28,19 @@ for i in range(t):
 
     m = max(f, key=lambda x:f[x])
 
-    r1 = len(c)- max(f.values())
-    if r1%k ==0:
-        day = r1//k
-    else:
-        day = (r1//k)+1
+    # r1 = len(c)- max(f.values())
+    # if r1%k ==0:
+    #     day = r1//k
+    # else:
+    #     day = (r1//k)+1
+    # print(day)
+
+    x = 0
+    f2 = 1
+    # print(m)
+
+    for i in c:
+        if i!=m:
+            
     print(day)
+
