@@ -80,30 +80,3 @@
 #     n = input()
 #
 #     print(len(n))
-
-t = int(input())
-for i in range(t):
-    n = int(input())
-
-    x = 0
-    j =0
-    # while (x!=n):
-    #     if x<n:
-    #         x+=j
-    #     elif x>n:
-    #         x-=1
-    #     j+=1
-
-    while(x<n):
-        for _ in range(int(input())):
-            n = int(input())
-            a = 1
-            p = 0
-            while (p < n):
-                p += a
-                a += 1
-            if p - 1 == n:
-                ans = a
-            else:
-                ans = a - 1
-            print(ans)
