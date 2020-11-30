@@ -95,3 +95,15 @@ for i in range(t):
     #     j+=1
 
     while(x<n):
+        for _ in range(int(input())):
+            n = int(input())
+            a = 1
+            p = 0
+            while (p < n):
+                p += a
+                a += 1
+            if p - 1 == n:
+                ans = a
+            else:
+                ans = a - 1
+            print(ans)
