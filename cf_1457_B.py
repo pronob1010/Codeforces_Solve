@@ -1,18 +1,4 @@
 
-#
-# t= int(input())
-# for i in range(t):
-#     n, m, r, c = list(map(int, input().split()))
-#
-#     a1 = (n-r)+(m-c)
-#     b2 = (abs(1-r)+abs(1-c))
-#     b3 = (abs(n-r)+abs(1-c))
-#     b4 = (abs(1-r)+abs(m-c))
-#     b5= (abs(n-r)+abs(m-c))
-#
-#     r1 = max(a1,b2,b3,b4, b5)
-#     print(r1)
-
 t= int(input())
 for i in range(t):
     n, k = list(map(int, input().split()))
@@ -28,19 +14,23 @@ for i in range(t):
 
     m = max(f, key=lambda x:f[x])
 
-    # r1 = len(c)- max(f.values())
-    # if r1%k ==0:
-    #     day = r1//k
-    # else:
-    #     day = (r1//k)+1
+
+
+
+    # x = 0
+    # for i in c:
+    #     if i is not m:
+    #         # print(i)
+    #         if x<=k:
+    #             x += 1
+    #         else:
+    #             x-=k
+    #             if x % k:
+    #                 day += 1
+    #             x = 0
+    #     else:
+    #         print(x, day)
+    #         if x>0:
+    #             day+=1
+    #         x = 0
     # print(day)
-
-    x = 0
-    f2 = 1
-    # print(m)
-
-    for i in c:
-        if i!=m:
-            
-    print(day)
-
