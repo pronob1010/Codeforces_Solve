@@ -10,5 +10,6 @@ for j in range(len(s2)-1):
         print("YES")
         break
 
+
 else:
     print("NO")
