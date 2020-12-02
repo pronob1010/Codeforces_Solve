@@ -1,15 +1,15 @@
 s1 = input()
 s2 = input()
-
-
-for j in range(len(s2)-1):
-    t = s2[0]
-    s2 = s2[1:]+t
-    # print(s2)
-    if s1 == s2:
+x = sorted(s1)
+y = sorted(s2)
+c = 0
+if x == y :
+    for i in range(len(x)):
+        if s1[i]!= s2[i]:
+            c+=1
+    if c == 2:
         print("YES")
-        break
-
-
+    else:
+        print("NO")
 else:
     print("NO")
