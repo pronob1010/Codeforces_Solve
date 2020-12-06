@@ -62,9 +62,14 @@ for i in range(t):
     n = int(input())
     a = list(map(int, input().split()))[:n]
 
-    if sum(a) == 0:
+    if sum(a)==0:
         print("NO")
     else:
-        a.sort()
-        print("YES")
-        print(*a,sep=" ")
+        if sum(a)>0:
+            a.sort(reverse=True)
+            print("YES")
+            print(*a,sep=" ")
+        else:
+            a.sort()
+            print("YES")
+            print(*a, sep=" ")
