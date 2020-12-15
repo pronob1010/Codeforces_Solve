@@ -156,45 +156,45 @@
 #
 
 
-#
-# p = int(input())
-# for l in range(p):
-#     n = int(input())
-#     s = list(map(int, input().split()))
-#     s2 = []
-#     j = 0
-#     for i in range(len(s)):
-#         p = s[i]
-#         q = s[len(s)-1-i]
-#         s2.append(p)
-#         s2.append(q)
-#
-#     for i in range(len(s2)//2):
-#         print(s2[i],end=" ")
-#     print()
 
 p = int(input())
 for l in range(p):
     n = int(input())
-    s = input()
+    s = list(map(int, input().split()))
     s2 = []
-    c  = 0
-
     j = 0
-    if s[j]=='2' and s[j+1]=='0' and s[j+2]=='2' and s[j+3]=='0':
-        print("YES")
-    elif s[j] == '2' and s[j + 1] == '0' and s[j+2] == '2' and s[n - 1] == '0':
-        print("YES")
-    elif s[j]=='2' and s[j+1]=='0' and s[n-2]=='2' and s[n-1]=='0':
-        print("YES")
+    for i in range(len(s)):
+        p = s[i]
+        q = s[len(s)-1-i]
+        s2.append(p)
+        s2.append(q)
 
-    elif s[j]=='2' and s[n-3]=='0' and s[n-2]=='2' and s[n-1]=='0':
-        print("YES")
-    elif s[n-4]=='2' and s[n-3]=='0' and s[n-2]=='2' and s[n-1]=='0':
-        print("YES")
+    for i in range(len(s2)//2):
+        print(s2[i],end=" ")
+    print()
 
-    else:
-        print("NO")
+# p = int(input())
+# for l in range(p):
+#     n = int(input())
+#     s = input()
+#     s2 = []
+#     c  = 0
+#
+#     j = 0
+#     if s[j]=='2' and s[j+1]=='0' and s[j+2]=='2' and s[j+3]=='0':
+#         print("YES")
+#     elif s[j] == '2' and s[j + 1] == '0' and s[j+2] == '2' and s[n - 1] == '0':
+#         print("YES")
+#     elif s[j]=='2' and s[j+1]=='0' and s[n-2]=='2' and s[n-1]=='0':
+#         print("YES")
+#
+#     elif s[j]=='2' and s[n-3]=='0' and s[n-2]=='2' and s[n-1]=='0':
+#         print("YES")
+#     elif s[n-4]=='2' and s[n-3]=='0' and s[n-2]=='2' and s[n-1]=='0':
+#         print("YES")
+#
+#     else:
+#         print("NO")
 
 #
 # p = int(input())
