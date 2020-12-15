@@ -195,38 +195,42 @@
 #
 #     else:
 #         print("NO")
-# p = int(input())
-# for i in range(p):
-#     n = int(input())
-#     s=[]
-#     x=9
-#     if n>45 or n<0:
-#         print(-1)
-#     elif n==0:
-#         print(0)
-#     else:
-#         while n>0:
-#             if x<=n:
-#                 s.append(x)
-#                 n-=x
-#                 x-=1
-#             else:
-#                 x-=1
-#         s.sort()
-#         print(*s,sep="")
+
+
 p = int(input())
-for l in range(p):
+for i in range(p):
     n = int(input())
-    s = list(map(int, input().split()))
-    s.sort()
-    c  = 0
-    s2 = s
-    s3 = 0
-    if len(set(s2)) == 1:
+    s=[]
+    x=9
+    if n>45 or n<0:
+        print(-1)
+    elif n==0:
         print(0)
     else:
-        for i in range(1,len(s)):
-            s3 = (s[i-1]+s[i])
-            s3 = s[i+2:len(s)-1]
-            print(s3)
+        while n>0:
+            if x<=n:
+                s.append(x)
+                n-=x
+                x-=1
+            else:
+                x-=1
+        s.sort()
+        print(*s,sep="")
 
+
+# p = int(input())
+# for l in range(p):
+#     n = int(input())
+#     s = list(map(int, input().split()))
+#     s.sort()
+#     c  = 0
+#     s2 = s
+#     s3 = 0
+#     if len(set(s2)) == 1:
+#         print(0)
+#     else:
+#         for i in range(1,len(s)):
+#             s3 = (s[i-1]+s[i])
+#             s3 = s[i+2:len(s)-1]
+#             print(s3)
+#
