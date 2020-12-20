@@ -276,35 +276,35 @@
 #         ss = int(ss)+1
 
 #
-# xx= int(input())
-# for l in range(xx):
-#     x = int(input())
-#     dig = x
-#
-#     while True:
-#         s = str(dig)
-#         result = dig
-#         li  = []
-#         c1=0
-#
-#
-#         for i in s:
-#
-#             if i not in li and i!='0':
-#                 li.append(i)
-#
-#         n_list = [int(k) for k in li]
-#         lens = len(n_list)
-#         for j in n_list:
-#             if dig%j==0:
-#                 c1+=1
-#         if c1==lens:
-#             break
-#         else:
-#             dig+=1
-#     print(result)
-#
-#
+xx= int(input())
+for l in range(xx):
+    x = int(input())
+    dig = x
+
+    while True:
+        s = str(dig)
+        result = dig
+        li  = []
+        c1=0
+
+
+        for i in s:
+
+            if i not in li and i!='0':
+                li.append(i)
+
+        n_list = [int(k) for k in li]
+        lens = len(n_list)
+        for j in n_list:
+            if dig%j==0:
+                c1+=1
+        if c1==lens:
+            break
+        else:
+            dig+=1
+    print(result)
+
+
 
 t = int(input())
 for i in range(t):
