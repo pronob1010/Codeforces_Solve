@@ -254,57 +254,57 @@
 #         print("NO")
 
 
-# p = int(input())
-# for l in range(int(input())):
-#     ss =(input())
-#
-#     c = 0
-#     while(True):
-#         dig = []
-#         if c == len(str(ss)):
-#             print(ss-1)
-#             break
-#         else:
-#             ss2 = ss
-#             ss2 = str(ss2)
-#             for i in range(len(str(ss))):
-#                 if str(ss2[i]) != '0' and str(ss2[i]) not in dig:
-#                     dig.append(int(ss2[i]))
-#             for i in range(len(dig)):
-#                 if int(ss)% dig[i] ==0:
-#                     c +=1
-#         ss = int(ss)+1
+p = int(input())
+for l in range(int(input())):
+    ss =(input())
 
-#
-xx= int(input())
-for l in range(xx):
-    x = int(input())
-    dig = x
-
-    while True:
-        s = str(dig)
-        result = dig
-        li  = []
-        c1=0
-
-
-        for i in s:
-
-            if i not in li and i!='0':
-                li.append(i)
-
-        n_list = [int(k) for k in li]
-        lens = len(n_list)
-        for j in n_list:
-            if dig%j==0:
-                c1+=1
-        if c1==lens:
+    c = 0
+    while(True):
+        dig = []
+        if c == len(str(ss)):
+            print(ss-1)
             break
         else:
-            dig+=1
-    print(result)
+            ss2 = ss
+            ss2 = str(ss2)
+            for i in range(len(str(ss))):
+                if str(ss2[i]) != '0' and str(ss2[i]) not in dig:
+                    dig.append(int(ss2[i]))
+            for i in range(len(dig)):
+                if int(ss)% dig[i] ==0:
+                    c +=1
+        ss = int(ss)+1
 
 
+# xx= int(input())
+# for l in range(xx):
+#     x = int(input())
+#     dig = x
+#
+#     while True:
+#         s = str(dig)
+#         result = dig
+#         li  = []
+#         c1=0
+#
+#
+#         for i in s:
+#
+#             if i not in li and i!='0':
+#                 li.append(i)
+#
+#         n_list = [int(k) for k in li]
+#         lens = len(n_list)
+#         for j in n_list:
+#             if dig%j==0:
+#                 c1+=1
+#         if c1==lens:
+#             break
+#         else:
+#             dig+=1
+#     print(result)
+#
+#
 
 t = int(input())
 for i in range(t):
