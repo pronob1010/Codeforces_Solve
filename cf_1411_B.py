@@ -1,3 +1,4 @@
+
 def fun(s):
     s1 = s
     while(s1>0):
