@@ -398,3 +398,7 @@ import math
     #         print(s[len(s)-2:-1],end="")
     #     # print(s,end="")
     #     print(x)
+
+t = int(input())
+for i in range(t):
+    n = int(input())
