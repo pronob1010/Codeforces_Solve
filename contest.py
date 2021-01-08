@@ -338,9 +338,9 @@
 #     else:
 #          print("NO")
 import math
-t = int(input())
-for i in range(t):
-    n = int(input())
+# t = int(input())
+# for i in range(t):
+#     n = int(input())
     # # x = 9
     # # print(x, end="")
     # # x = 9-(n-1)
@@ -351,14 +351,14 @@ for i in range(t):
     #
     #     print(x, end="")
     # print(last)
-    r = n//9
-    x = 9
-    for j in range(r):
-        print("9876543210",end="")
-    for k in range(n-(9*r)):
-        print(x,end="")
-        x-=1
-    print()
+    # r = n//9
+    # x = 9
+    # for j in range(r):
+    #     print("9876543210",end="")
+    # for k in range(n-(9*r)):
+    #     print(x,end="")
+    #     x-=1
+    # print()
     # l = 8
     # n1 = ''
     # n2 = ''
