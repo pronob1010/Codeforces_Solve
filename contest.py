@@ -351,30 +351,30 @@ for i in range(t):
     #
     #     print(x, end="")
     # print(last)
-    # r = n//9
-    # x = 9
-    # for j in range(r):
-    #     print("9876543210",end="")
-    # for k in range(n-(9*r)):
-    #     print(x,end="")
-    #     x-=1
-    # print()
-    l = 8
-    n1 = ''
-    n2 = ''
-    loo = (n-1)//2
+    r = n//9
     x = 9
-    x2 = 9
-    print(x,end="")
-    for j in range(loo):
-        print(j)
-
-    for j in range(n-loo):
-        n2.join(x2)
-    # new = n1+reversed(n2)+l
-    print(n1,end="")
-    print(reversed(n2),end="")
-    print(l)
+    for j in range(r):
+        print("9876543210",end="")
+    for k in range(n-(9*r)):
+        print(x,end="")
+        x-=1
+    print()
+    # l = 8
+    # n1 = ''
+    # n2 = ''
+    # loo = (n-1)//2
+    # x = 9
+    # x2 = 9
+    # print(x,end="")
+    # for j in range(loo):
+    #     print(j)
+    #
+    # for j in range(n-loo):
+    #     n2.join(x2)
+    # # new = n1+reversed(n2)+l
+    # print(n1,end="")
+    # print(reversed(n2),end="")
+    # print(l)
     # if n==1:
     #     print(9)
     # else:
