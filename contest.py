@@ -306,17 +306,95 @@
 #
 #
 
+# t = int(input())
+# for i in range(t):
+#     n, m= list(map(int, input().split()))
+#     point = []
+#     point_sel = []
+#     for j in range(m):
+#         s = list(map(int, input().split()))
+#         point.append(s)
+#     print(point)
+#     for j in point:
+#         if j[0] != j[1]:
+#             point_sel.append(j)
+#
+#     print(point_sel)
+
+# t = int(input())
+# for i in range(t):
+#     f = 0
+#     r = 1
+#     w, h, n = list(map(int, input().split()))
+#
+#     if w%2==0:
+#         r += (w//2)*h
+#     if h%2==0:
+#         r += w*(h//2)
+#
+#     print(r)
+#     if r >= n:
+#          print("YES")
+#     else:
+#          print("NO")
+import math
 t = int(input())
 for i in range(t):
-    n, m= list(map(int, input().split()))
-    point = []
-    point_sel = []
-    for j in range(m):
-        s = list(map(int, input().split()))
-        point.append(s)
-    print(point)
-    for j in point:
-        if j[0] != j[1]:
-            point_sel.append(j)
-
-    print(point_sel)
+    n = int(input())
+    # # x = 9
+    # # print(x, end="")
+    # # x = 9-(n-1)
+    # last = (n//9)+ 9 - (n-1)
+    # for j in range(1,n):
+    #     pos = abs(n-j)
+    #     x = last+pos
+    #
+    #     print(x, end="")
+    # print(last)
+    # r = n//9
+    # x = 9
+    # for j in range(r):
+    #     print("9876543210",end="")
+    # for k in range(n-(9*r)):
+    #     print(x,end="")
+    #     x-=1
+    # print()
+    # l = 8
+    # n1 = ''
+    # n2 = ''
+    # loo = (n-1)//2
+    # x = 9
+    # x2 = 9
+    # print(x,end="")
+    # for j in range(loo):
+    #     print(j)
+    #
+    # for j in range(n-loo):
+    #     n2.join(x2)
+    # # new = n1+reversed(n2)+l
+    # print(n1,end="")
+    # print(reversed(n2),end="")
+    # print(l)
+    if n==1:
+        print(9)
+    else:
+        n-=1
+        x = 8
+        x2 = 0
+        p1 = math.ceil(n/2)
+        # print(p1)
+        s = '9'
+        for j in range(p1-1):
+            if x2>9:
+                x2 = 0
+            pp = x2
+            s+=str(pp)
+            x2+=1
+        print(s,end="")
+        if n%2==0:
+            s = reversed(s)
+            print(*s,sep="",end="")
+        else:
+            print(s[len(s)-2:-1],end="")
+        # print(s,end="")
+        print(x)
