@@ -411,4 +411,5 @@ for i in range(t):
         if x>9:
             x = 0
         print(x, end="")
+        x+=1
     print()
