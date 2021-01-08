@@ -359,42 +359,42 @@ for i in range(t):
     #     print(x,end="")
     #     x-=1
     # print()
-    # l = 8
-    # n1 = ''
-    # n2 = ''
-    # loo = (n-1)//2
-    # x = 9
-    # x2 = 9
-    # print(x,end="")
-    # for j in range(loo):
-    #     print(j)
-    #
-    # for j in range(n-loo):
-    #     n2.join(x2)
-    # # new = n1+reversed(n2)+l
-    # print(n1,end="")
-    # print(reversed(n2),end="")
-    # print(l)
-    if n==1:
-        print(9)
-    else:
-        n-=1
-        x = 8
-        x2 = 0
-        p1 = math.ceil(n/2)
-        # print(p1)
-        s = '9'
-        for j in range(p1-1):
-            if x2>9:
-                x2 = 0
-            pp = x2
-            s+=str(pp)
-            x2+=1
-        print(s,end="")
-        if n%2==0:
-            s = reversed(s)
-            print(*s,sep="",end="")
-        else:
-            print(s[len(s)-2:-1],end="")
-        # print(s,end="")
-        print(x)
+    l = 8
+    n1 = ''
+    n2 = ''
+    loo = (n-1)//2
+    x = 9
+    x2 = 9
+    print(x,end="")
+    for j in range(loo):
+        print(j)
+
+    for j in range(n-loo):
+        n2.join(x2)
+    # new = n1+reversed(n2)+l
+    print(n1,end="")
+    print(reversed(n2),end="")
+    print(l)
+    # if n==1:
+    #     print(9)
+    # else:
+    #     n-=1
+    #     x = 8
+    #     x2 = 0
+    #     p1 = math.ceil(n/2)
+    #     # print(p1)
+    #     s = '9'
+    #     for j in range(p1-1):
+    #         if x2>9:
+    #             x2 = 0
+    #         pp = x2
+    #         s+=str(pp)
+    #         x2+=1
+    #     print(s,end="")
+    #     if n%2==0:
+    #         s = reversed(s)
+    #         print(*s,sep="",end="")
+    #     else:
+    #         print(s[len(s)-2:-1],end="")
+    #     # print(s,end="")
+    #     print(x)
