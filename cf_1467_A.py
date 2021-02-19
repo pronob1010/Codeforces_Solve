@@ -7,7 +7,7 @@ for i in range(t):
         if j<n:
             print(p1[j],end="")
     x = 0
-    for j in range(n-3):
+    for j in range(n-3):   
         if x>9:
             x = 0
         print(x, end="")

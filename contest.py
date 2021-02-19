@@ -399,17 +399,30 @@ import math
     #     # print(s,end="")
     #     print(x)
 
+# t = int(input())
+# for i in range(t):
+#     n = int(input())
+#     p1 = str(989)
+#     for j in range(3):
+#         if j<n:
+#             print(p1[j],end="")
+#     x = 0
+#     for j in range(n-3):
+#         if x>9:
+#             x = 0
+#         print(x, end="")
+#         x+=1
+#     print()
+
 t = int(input())
 for i in range(t):
-    n = int(input())
-    p1 = str(989)
-    for j in range(3):
-        if j<n:
-            print(p1[j],end="")
-    x = 0
-    for j in range(n-3):
-        if x>9:
-            x = 0
-        print(x, end="")
-        x+=1
-    print()
+    s = list(map(int, input().split()))
+    n = s[-1]
+    s = s[:-1]
+    for j in s:
+        if j>=0 and j<=5:
+            r = j
+        else:
+            r =
+    print(n)
+
