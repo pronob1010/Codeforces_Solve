@@ -6,9 +6,9 @@ for i in range(n):
 
 print(list1)
 print('------')
-for i in range(n):
-    for j in range(m):
-        print(list1[i][j])
-        print(list1[i][j+1])
-        print(list1[i+1][j])
-    print('------')
+for i in range(1,n):
+    for j in range(1,m):
+        print(list1[i-1][j-1])
+        print(list1[i-1][j])
+        print(list1[i][j-1])
+        print('------')
